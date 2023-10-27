@@ -4,6 +4,9 @@ body {
     margin: 0px;
     padding: 0px;
     background: url('barbell-1839086_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .left {
@@ -23,7 +26,7 @@ body {
     line-height: 19px;
     font-size: 26px;
     text-align: center;
-    color: aqua;
+    color: rgb(217, 234, 234);
 }
 
 .mid {
@@ -31,19 +34,19 @@ body {
     width: 100%;
     text-align: center;
     margin: 43px auto;
-   
 }
 
 .right {
     position: absolute;
     right: 34px;
     top: 43px;
-    display: inline-block;
+    display: flex;
    
 }
 
 .navbar {
     display: inline-block;
+    
 }
 
 .navbar li {
@@ -101,7 +104,7 @@ body {
 
 .container h1 {
     text-align: center;
-    color:aquamarine;
+    color:rgb(242, 252, 248);
 }
 
 .container button {
@@ -109,3 +112,49 @@ body {
     width: 74%;
     margin: 20px auto;
 }
+
+    @media screen and (max-width: 1300px ) {
+        .left, .right {
+            position: absolute;
+            text-align: center;
+        }
+    
+        .left img {
+            width: 80px;
+            max-width: 100%;
+        }
+    
+        .left div {
+            font-size: 20px;
+        }
+    
+        .mid {
+            text-align: center;
+        }
+    
+        .navbar {
+            display: block;
+            text-align: center;
+        }
+    
+        .navbar li {
+            display: block;
+            font-size: 20px;
+            padding: 10px 0;
+        }
+
+        .form-group input {
+
+            width: 550px;
+        }
+
+        .container {
+            width: 80%;
+        margin: 5% auto;
+        }
+
+        body {
+            background-position: center;
+        }
+    }
+   
